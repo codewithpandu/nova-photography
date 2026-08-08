@@ -23,8 +23,11 @@ const navlinks = [
   },
 ];
 
-export function Navlink({ name, href }: { name: string; href: string }) {
-  return <Link href={href}>{name}</Link>;
+export function Navlink({
+  name,
+  ...props
+}: { name: string } & React.ComponentProps<typeof Link>) {
+  return <Link {...props}>{name}</Link>;
 }
 
 export default function Navbar() {
@@ -51,7 +54,12 @@ export default function Navbar() {
             )}
           >
             {navlinks.map((link) => (
-              <Navlink key={link.href} name={link.name} href={link.href} />
+              <Navlink
+                key={link.href}
+                name={link.name}
+                href={link.href}
+                onClick={() => setOpen(false)}
+              />
             ))}
           </li>
         </ul>
