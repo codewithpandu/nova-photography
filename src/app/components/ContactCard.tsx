@@ -12,13 +12,13 @@ export default function ContactCard({
   content,
 }: ContactCardProps) {
   return (
-    <div className="w-full h-fit flex flex-col p-7 gap-7 rounded-4xl bg-neutral-200/50 dark:bg-neutral-800/60">
-      <div className="w-18 aspect-square rounded-xl flex items-center justify-center bg-neutral-200 dark:bg-neutral-800">
-        <Icon className="text-3xl text-neutral-400 dark:text-neutral-600" />
+    <div className="w-full h-fit flex flex-col p-7 gap-7 rounded-4xl bg-background border shadow-2xl">
+      <div className="w-18 aspect-square rounded-xl flex bg-foreground/80 items-center justify-center ">
+        <Icon className="text-3xl text-background" />
       </div>
       <div className="w-full h-fit flex flex-col gap-2 px-1.5">
-        <h4 className="text-xl font-semibold">{title}</h4>
-        <p className="text-ellipsis line-clamp-2 text-neutral-500">{content}</p>
+        <h4 className="text-xl font-semibold text-foreground w-fit">{title}</h4>
+        <p className="text-ellipsis line-clamp-2 text-foreground">{content}</p>
       </div>
     </div>
   );
