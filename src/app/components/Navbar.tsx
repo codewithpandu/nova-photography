@@ -40,7 +40,9 @@ export default function Navbar() {
         <ul
           className={cn(
             "absolute top-0 left-0 h-full z-99 bg-black text-white w-2/3 transition-all duration-300 ease-in-out md:static md:bg-transparent md:text-black md:w-auto md:flex md:items-center",
-            isOpen ? "translate-x-0" : "translate-x-[-120%] md:translate-x-0",
+            isOpen
+              ? "translate-x-0 fixed"
+              : "translate-x-[-120%] md:translate-x-0",
           )}
         >
           <li

@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html>
-      <body className="min-h-dvh">
+      <body className="">
         <Navbar />
         <main>{children}</main>
         <Footer />
