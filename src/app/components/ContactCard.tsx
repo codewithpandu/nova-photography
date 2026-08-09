@@ -12,8 +12,8 @@ export default function ContactCard({
   content,
 }: ContactCardProps) {
   return (
-    <div className="w-full h-fit flex flex-col p-7 gap-7 rounded-4xl bg-background border shadow-2xl">
-      <div className="w-18 aspect-square rounded-xl flex bg-foreground/80 items-center justify-center ">
+    <div className="w-full h-fit flex flex-col p-7 gap-7 rounded-4xl bg-background border shadow-md">
+      <div className="w-18 aspect-square rounded-xl flex bg-foreground/50 items-center justify-center ">
         <Icon className="text-3xl text-background" />
       </div>
       <div className="w-full h-fit flex flex-col gap-2 px-1.5">
